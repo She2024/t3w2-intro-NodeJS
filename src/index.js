@@ -33,6 +33,7 @@ function rollDice(diceSide=6) {
 // });
 
 function getDiceSide() {
+    do{
 const diceSide = promptSync("How many sided dice do you want to roll? ");
 
 try {
@@ -46,6 +47,11 @@ try {
 catch {
     console.error("You got an error!");
 }
+finally {
+    console.log("Dice roll operatin completed.")
+}
+
+} while (promptSync('Do you want ot roll again? (y/n) ').tolocalLowerCase() === 'y');
 }
 
 getDiceSide();
