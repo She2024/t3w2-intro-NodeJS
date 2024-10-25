@@ -15,7 +15,8 @@
   "license": "ISC",
   "description": "Dice rolling application in the terminal",
   "dependencies": {
-    "inquirer": "^12.0.0"
+    "inquirer": "^12.0.0",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "jsdoc": "^4.0.4",
